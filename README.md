@@ -1,6 +1,6 @@
 # Alternating Direction Method of Multipliers (ADMM) for Support Vector Machine (SVM)
 
-Detailed derivation and instruction are available at [Craft](https://www.craft.do/s/AKezsU0fzSrgtU).
+Detailed instruction, derivation, and experiment results are available at [Craft](https://www.craft.do/s/AKezsU0fzSrgtU).
 
 ## Reference
 
