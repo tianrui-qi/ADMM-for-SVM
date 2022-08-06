@@ -1,6 +1,6 @@
 %% classification on spamData
 
-load spamData;
+load data/spamData;
 
 for i = 1:size(Xtrain,2)
     Xtrain(:,i) = Xtrain(:,i)/norm(Xtrain(:,i));
