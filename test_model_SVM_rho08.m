@@ -1,6 +1,6 @@
 %% classification on ranData_rho08
 
-load ranData_rho08;
+load data/ranData_rho08;
 
 %% basic parameter
 
