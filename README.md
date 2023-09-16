@@ -1,6 +1,6 @@
 # Alternating Direction Method of Multipliers (ADMM) for Support Vector Machine (SVM)
 
-The following details are available at [Craft](https://www.craft.do/s/AKezsU0fzSrgtU):
+The following details are available at [Craft](https://craft.tianrui.blog/admm-for-svm):
 - Instruction about alternating direction method of multipliers (ADMM) and augmented Lagrangian method (ALM)
 - Derivation of ADMM for SVM
 - Simulation results on Matlab
