@@ -3,7 +3,7 @@
 The following details are available at [Craft](https://craft.tianrui-qi.com/admm-for-svm):
 - Instruction about alternating direction method of multipliers (ADMM) and augmented Lagrangian method (ALM)
 - Derivation of ADMM for SVM
-- Simulation results on Matlab
+- Simulation results in MATLAB
 
 ## Reference
 
