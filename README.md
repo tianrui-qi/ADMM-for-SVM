@@ -188,13 +188,19 @@ a constant, and we can compute it before the iteration start. For $\mathbf{T}$,
 setting the gradient equal to zero, we have that
 
 ```math
-\begin{aligned}\nabla_{\mathbf{T} } \mathcal{L}_{\beta } \left( \mathbf{T} ,\mathbf{W}^{\left( k+1\right)  } ;\mathbf{u}^{\left( k\right)  } \right)  &=\sigma \left( \mathbf{T} \right)  +\mathbf{u}^{\left( k\right)  } +\beta \left( \mathbf{T} +\mathbf{X} \mathbf{W}^{\left( k+1\right)  } -\mathbf{1} \right)  =0\qquad \sigma_{i} =\begin{cases}1&\mathbf{T}_{i} \geq 0\\ 0&\mathbf{T}_{i} <0\end{cases} \\ \mathbf{T}^{\left( k+1\right)  } +\frac{1}{\beta } \sigma \left( \mathbf{T}^{\left( k+1\right)  } \right)  &=-\frac{1}{\beta } \mathbf{u}^{\left( k\right)  } -\mathbf{X} \mathbf{W}^{\left( k+1\right)  } +\mathbf{1} \end{aligned}
+\begin{aligned}\nabla_{\mathbf{T}} \mathcal{L}_{\beta} \left( \mathbf{T} ,\mathbf{W}^{\left( k+1 \right)} ;\mathbf{u}^{\left( k \right)} \right)&=0\\ \sigma \left( \mathbf{T} \right) +\mathbf{u}^{\left( k \right)} +\beta \left( \mathbf{T} +\mathbf{X} \mathbf{W}^{\left( k+1 \right)} -\mathbf{1} \right)&=0\\ \mathbf{T}^{\left( k+1 \right)} +\frac{1}{\beta} \sigma \left( \mathbf{T}^{\left( k+1 \right)} \right)&=-\frac{1}{\beta} \mathbf{u}^{\left( k \right)} -\mathbf{X} \mathbf{W}^{\left( k+1 \right)} +\mathbf{1}\end{aligned} \qquad \sigma_{i} \begin{cases}=1&\mathbf{T}_{i} >0\\ \in \left[ 0,1 \right]&\mathbf{T}_{i} =0\\ =0&\mathbf{T}_{i} <0\end{cases}
 ```
 
-We have three cases:
+i.e.
 
 ```math
-\mathbf{T}^{\left( k+1\right)  }_{i} =\begin{cases} \displaystyle \mathbf{C}_{i} -\frac{1}{\beta } &\displaystyle\frac{1}{\beta } <\mathbf{C}_{i} \\ 0&\displaystyle0\leq \mathbf{C}_{i} \leq \frac{1}{\beta } \\ \mathbf{C}_{i} &\mathbf{C}_{i} <0\end{cases}\qquad \mathbf{C}_{i} =-\frac{1}{\beta } \mathbf{u}^{\left( k\right)  }_i -\mathbf{X}_i \mathbf{W}^{\left( k+1\right)  } +1
+\mathbf{T}_{i}^{(k+1)} +\frac{1}{\beta} \sigma \left( \mathbf{T}_{i}^{(k+1)} \right) =\mathbf{C}_{i}\qquad \mathbf{C}_{i} =-\frac{1}{\beta } \mathbf{u}^{\left( k\right)  }_i -\mathbf{X}_i \mathbf{W}^{\left( k+1\right)  } +1,
+```
+
+We have three cases,
+
+```math
+\mathbf{T}_{i}^{(k+1)} =\begin{cases}\mathbf{C}_{i} -1/\beta&\mathbf{T}_{i}^{(k+1)} >0\rightarrow \mathbf{C}_{i} >1/\beta\\ 0&\mathbf{T}_{i}^{(k+1)} =0\rightarrow 0\leq \mathbf{C}_{i} \leq 1/\beta\\ \mathbf{C}_{i}&\mathbf{T}_{i}^{(k+1)} <0\rightarrow \mathbf{C}_{i} <0\end{cases}
 ```
 
 Next, we solve
