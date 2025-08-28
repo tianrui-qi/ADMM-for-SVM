@@ -1,4 +1,4 @@
-Check out Tianrui Qi's [Optimization](https://craft.tianrui-qi.com/optimization) 
+Check out Tianrui Qi's [Optimization](https://tianrui-qi.craft.me/optimization) 
 Wiki page for more details about augmented Lagrangian method (ALM), alternating 
 direction method of multipliers (ADMM), and other optimization algorithms.
 
